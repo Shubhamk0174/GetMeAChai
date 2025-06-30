@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+button{
+    cursor: pointer;
+}
+
+
+
+
+/* Scrollbar width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px; /* for horizontal scrollbar */
+}
+
+/* Scrollbar track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: oklch(68.984% 0.14879 258.514);
+  border-radius: 10px;
+}
+
+/* Hide scrollbar buttons (works in Firefox) */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox thin scrollbar */
+  scrollbar-color: oklch(68.984% 0.14879 258.514) transparent; /* thumb color and track */
+}
+
+/* Remove buttons in WebKit (no longer shown in modern browsers) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+
