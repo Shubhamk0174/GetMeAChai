@@ -26,6 +26,12 @@ const PaymentPage = ({ params }) => {
     const router = useRouter()
 
     const searchParams = useSearchParams();
+    const gatData = useCallback(async (username) => {
+        let u = await fetchuser(username);
+        setcurrentUser(u);
+        let dbpayments = await fetchpayments(username);
+        setPayments(dbpayments);
+    }, []);
 
     useEffect(() => {
         gatData(username);
@@ -69,12 +75,6 @@ const PaymentPage = ({ params }) => {
     }, [router, searchParams, username])
 
 
-    const gatData = useCallback(async (username) => {
-        let u = await fetchuser(username);
-        setcurrentUser(u);
-        let dbpayments = await fetchpayments(username);
-        setPayments(dbpayments);
-    }, []);
 
 
 
