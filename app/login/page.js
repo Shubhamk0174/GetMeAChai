@@ -11,7 +11,7 @@ const LoginPage = () => {
     useEffect(() => {
         // document.title= "Login- Get Me A Chai"
         if (session) {
-            router.push(`/${session.user.email.split("@")[0]}`)
+            router.push(`/updatedashboard`)
         }
 
     }, [router, session])
