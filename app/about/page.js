@@ -8,23 +8,22 @@ const About = () => {
           About Us
         </h1>
         <p className="text-lg text-gray-700 mb-6">
-          Welcome to <span className="font-semibold">YourWebsiteName</span> — a platform where simplicity meets functionality. We aim to provide seamless payment management, profile handling, and easy transactions for creators, businesses, and individuals.
-        </p>
-        <p className="text-lg text-gray-700 mb-6">
-          Our mission is to empower users by offering reliable tools that help manage payments, connect with others, and maintain transparency in all transactions. Whether you are a freelancer, small business, or community builder, this platform is designed to make your work smoother.
-        </p>
-        <p className="text-lg text-gray-700 mb-6">
-          Built with modern technologies like <span className="font-semibold">Next.js</span>, <span className="font-semibold">MongoDB</span>, <span className="font-semibold">Razorpay</span>, and <span className="font-semibold">Tailwind CSS</span>, we ensure high performance and security.
+          Welcome to <span className="font-semibold">Get Me A Chai</span> — a project which is a part of Sigma Web Development course by Code With Harry 
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4 text-blue-600">
-          Our Values
+          Here is What I Learned In This Course 
         </h2>
         <ul className="text-left text-gray-700 list-disc list-inside space-y-2">
-          <li>🔒 Security First — Your data stays safe.</li>
-          <li>⚡ Simplicity — Easy-to-use interface for everyone.</li>
-          <li>🚀 Speed — Fast transactions, quick responses.</li>
-          <li>🤝 Transparency — Everything clear, no hidden fees.</li>
+         
+          <li>⚡ HTML </li>
+          <li>🚀 CSS</li>
+          <li>⚡ JavaScript</li>
+          <li>🚀 React</li>
+          <li>⚡ Express</li>
+          <li>🚀 MongoDB</li>
+          <li>⚡ Next.Js</li>
+          
         </ul>
 
       </div>
