@@ -22,7 +22,7 @@ export const authoptions = NextAuth({
         // connect to the database 
          await connectDB();
         // check if the user already exists in the database
-        const existingUser = await User.findOne({ email: email });
+        const existingUser = await User.findOne({ email: user.email });
         if (!existingUser) {
           // if the user does not exist, create a new user
           const newUser = new User({
